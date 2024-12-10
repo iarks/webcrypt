@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -13,7 +13,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=",
+      "hash": "sha256-HwdaCZJK9eulRA93OiGbHhYYRUjXOQLNxCqXi0+R69s=",
       "url": "css\/bootstrap\/bootstrap.min.js"
     },
     {
@@ -53,7 +53,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-vRwEilx\/v+mINm\/7Z4BwqxECiL6tekQT4KulfF8sSEc=",
+      "hash": "sha256-+gVLLbbiiz8F9QmMQIsqZUgtTIT4m4UjVkKSbkopUDk=",
       "url": "index.html"
     },
     {
@@ -61,7 +61,7 @@
       "url": "libsodium\/libsodium-interop.js"
     },
     {
-      "hash": "sha256-98f\/UA5qpK06mhEKeYZicXKu+Qxs+aa2UHqOPrsZtoY=",
+      "hash": "sha256-8I8gjBELyKIKMe00Cdt0Ns9IenT+a4DvVitCK92fE9Q=",
       "url": "libsodium\/sodium.js"
     },
     {
@@ -105,23 +105,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-GvXpdw8vZzFMrnRS5GSYnAOdBDcuABNB6ITm1Ejiq+k=",
+      "hash": "sha256-fcMkjatmjp3A8xj\/tfcppdfmvfqovCA4GY5V619eDFU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-9BtSEjdlR5q9diTVjt43JQUSomHota2cgvU5M\/HfyIE=",
+      "hash": "sha256-JpgFDo\/grAMjQ4uK39jkO1f12rjqMoNsx8uI3A3qeX0=",
       "url": "_framework\/ArCrypt.Blazor.Model.wasm"
     },
     {
-      "hash": "sha256-+CLI9efvrug6\/L1Lvy3BIn+jDk1dzDBlOmsL5N\/72RQ=",
+      "hash": "sha256-LwC3DitQH\/\/TIZhYEwS1kDiq1Zt2VBGoCT3xX7S+BNU=",
       "url": "_framework\/ArCrypt.Blazor.Services.Abstractions.wasm"
     },
     {
-      "hash": "sha256-p5syvCj4kTTH9QLoJhwiSHI9p7n46PErCJ0V4D0nrfk=",
+      "hash": "sha256-EsZazr2TZcbm5ZoXuwFPNgzvov\/GJ+QQSyqedTIb+Co=",
       "url": "_framework\/ArCrypt.Blazor.Services.wasm"
     },
     {
-      "hash": "sha256-2ipMrQ1JA0FSH9X+LlNbAql3DzDClogHQ0ajRgzBfos=",
+      "hash": "sha256-OIrHXQWStLguZBCq36ILcQ3KJq5zEHJSlMlY1UKtmAY=",
       "url": "_framework\/ArCrypt.Blazor.wasm"
     },
     {
@@ -301,5 +301,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "RJDxnvTB"
+  "version": "zt9L0vrP"
 };
