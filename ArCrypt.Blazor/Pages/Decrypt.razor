@@ -1,5 +1,5 @@
 ﻿@page "/decrypt"
-@inject ArCrypt.Blazor.Services.Abstractions.ICryptoService _cryptoService
+@inject ICryptoService _cryptoService
 @using System
 @using System.Text
 @using System.ComponentModel.DataAnnotations
@@ -10,33 +10,41 @@
 <EditForm Model="@_encryptForm" OnValidSubmit="HandleSubmit">
     <DataAnnotationsValidator />
 
-    <div class="mb-3 form-floating">
-        <textarea class="form-control" style="height:100px; min-height:100px"
-                  placeholder="Ciphertext" id="ciphertext" @bind="@_encryptForm.Ciphertext">
-        </textarea>
-        <label for="ciphertext">Ciphertext</label>
+    <div class="mb-3" style="width:100%">
+        <ArInput @bind-Value="@_encryptForm.Ciphertext" Label="Ciphertext" Placeholder="Ciphertext"></ArInput>
     </div>
 
-    <div class="mb-3 form-floating">
-        <input class="form-control" placeholder="Password" id="password" type="password" @bind="@_encryptForm.Password"></input>
-        <label for="password">Password</label>
+
+    <div class="mb-3" style="width:100%">
+        <ArPassword @bind-Value="@_encryptForm.Password" Label="Password" Placeholder="Password" DisableGenerate="@true"></ArPassword>
     </div>
+
+
 
     <div class="mb-3">
-        <button type="submit" class="btn btn-primary w-100">Submit</button>
-        <button type="reset" class="btn btn-secondary w-100 mt-2" @onclick="ResetForm">Reset</button>
+        @if (isLoading)
+        {
+            <button class="btn btn-primary w-100" disabled>
+                <span class="spinner-border spinner-border-sm"></span>
+                <span>Loading...</span>
+            </button>
+        }
+        else
+        {
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        }
+        <button type="reset" class="btn btn-danger w-100 mt-2" @onclick="ResetForm">Reset</button>
     </div>
 
-    <div class="mb-3 form-floating">
-        <textarea class="form-control" style="height:100px; min-height:100px" placeholder="Plaintext" id="plaintext" @bind="@_encryptForm.Plaintext">
-        </textarea>
-        <label for="plaintext">Plaintext</label>
+    <div class="mb-3" style="width:100%">
+        <ArInput @bind-Value="@_encryptForm.Plaintext" readonly DisableClear="@true" Label="Plaintext" Placeholder="Plaintext"></ArInput>
     </div>
 
 </EditForm>
 
 @code {
 
+    private bool isLoading = false;
     private EncryptionForm _encryptForm = new();
     private ValidationContext _validationContext = null!;
     private List<ValidationResult> _validationResult = null!;
@@ -62,10 +70,17 @@
             }
         }
 
-        var ciphertextBytes = Convert.FromBase64String(_encryptForm.Ciphertext);
-        var plaintextBytes = await _cryptoService.Decrypt(ciphertextBytes, _encryptForm.Password, null);
-        var plainText = Encoding.UTF8.GetString(plaintextBytes);
-        _encryptForm.Plaintext = plainText;
+        try
+        {
+            var ciphertextBytes = Convert.FromBase64String(_encryptForm.Ciphertext);
+            var plaintextBytes = await _cryptoService.Decrypt(ciphertextBytes, _encryptForm.Password, null);
+            var plainText = Encoding.UTF8.GetString(plaintextBytes);
+            _encryptForm.Plaintext = plainText;
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
     }
 
     private void ResetForm()

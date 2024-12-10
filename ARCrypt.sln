@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArCrypt.Blazor.Services", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArCrypt.Blazor.Services.Abstractions", "ArCrypt.Blazor.Services.Abstractions\ArCrypt.Blazor.Services.Abstractions.csproj", "{B854DDDB-86A8-4F81-9DD3-4BFAE98C8A1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArCrypt.Blazor.Model", "ArCrypt.Blazor.Model\ArCrypt.Blazor.Model.csproj", "{F41F18CA-AAEC-4BCF-A059-E9D9576C1D5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArCrypt.Blazor.Model", "ArCrypt.Blazor.Model\ArCrypt.Blazor.Model.csproj", "{F41F18CA-AAEC-4BCF-A059-E9D9576C1D5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,40 @@
+@inherits Microsoft.AspNetCore.Components.Forms.InputText
+
+@inject IJSRuntime _jsRuntime
+
+<div style="width:100%">
+
+    <div class="input-group w-100">
+
+        <div class="form-floating flex-grow-1">
+            <textarea @attributes="@AdditionalAttributes" style="height:100px; min-height:100px" class="form-control" placeholder="Plaintext" id="input" @bind="@CurrentValueAsString" />
+            <label for="input">@Label</label>
+        </div>
+
+        @if(!DisableClear){
+            <button class="btn btn-outline-secondary" type="button" @onclick="Clear"><img src="./css/feathericons/x-dark.svg" alt="Alternate Text" /></button>
+        }
+
+        <button class="btn btn-outline-secondary" type="button" @onclick="CopyAsync"><img src="./css/feathericons/copy-dark.svg" alt="Alternate Text" /></button>
+    </div>
+
+</div>
+
+
+
+@code {
+
+    [Parameter] public bool DisableClear { get; set; }
+    [Parameter] public string? Label { get; set; }
+    [Parameter] public string? Placeholder { get; set; }
+
+    private void Clear()
+    {
+        CurrentValueAsString = "";
+    }
+
+    private async Task CopyAsync()
+    {
+        await _jsRuntime.InvokeVoidAsync("copyToClipboard", CurrentValueAsString);
+    }
+}
