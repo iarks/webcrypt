@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ArCrypt.Blazor",
   "resources": {
-    "hash": "sha256-vfM474Akah1LEwDei20HzVEH25wazVX8e8ebLcvp/m0=",
+    "hash": "sha256-Mma+IHo96UYqxJpVPDyd51FCA1bHv21hwRTGywBsqjc=",
     "jsModuleNative": {
       "dotnet.native.8.0.2.op9co1syrg.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
     },
@@ -20,7 +20,7 @@
       "ArCrypt.Blazor.Model.wasm": "sha256-JpgFDo/grAMjQ4uK39jkO1f12rjqMoNsx8uI3A3qeX0=",
       "ArCrypt.Blazor.Services.Abstractions.wasm": "sha256-LwC3DitQH//TIZhYEwS1kDiq1Zt2VBGoCT3xX7S+BNU=",
       "ArCrypt.Blazor.Services.wasm": "sha256-EsZazr2TZcbm5ZoXuwFPNgzvov/GJ+QQSyqedTIb+Co=",
-      "ArCrypt.Blazor.wasm": "sha256-OIrHXQWStLguZBCq36ILcQ3KJq5zEHJSlMlY1UKtmAY=",
+      "ArCrypt.Blazor.wasm": "sha256-6ggtD95Nch5zGuIA2FRR7w8E/5Mpaai+CkxltETct0U=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-PdwhtsA5wncrjKBD/bYhO3P0W8yeauEn2geyZ25iqlI=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-APpLKHBrM2WmahierWXyyB35eRmJeGEx7Jqxt+snpy8=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-bsOW+6/FdVQKqSWJn85Yk/i4znFCUGLL/4fKxrva3mA=",
